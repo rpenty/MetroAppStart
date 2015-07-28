@@ -1,7 +1,22 @@
-<input type="text" ng-model="first.greeting.message" />
-        
-<!--div ng-class="first.greeting">
-    {{ first.greeting.message }} {{ "World" }}
-</div-->
-
-<button class="btn btn-primary" ui-sref="second">Login</button>
+<br><br>
+<div class="row">
+    <div class="col-xs-6 col-xs-offset-3 col-md-6 col-md-offset-3">
+        <div class="input-group">
+            <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user"></i></span>
+            <input type="text" class="form-control" aria-describedby="basic-addon1" ng-model="first.greeting.message">
+        </div>
+    </div>
+</div><br>
+<div class="row">
+    <div class="col-xs-6 col-xs-offset-3 col-md-6 col-md-offset-3">
+        <div class="input-group">
+          <span class="input-group-addon" id="basic-addon1"><i class="fa  fa-gear"></i></span>
+          <input type="password" class="form-control" placeholder="Password" aria-describedby="basic-addon1">
+        </div>
+    </div>
+</div><br>
+<div class="row">
+    <div class="col-xs-6 col-xs-offset-3 col-md-6 col-md-offset-3">
+        <button class="btn btn-block btn-primary" ui-sref="second">Login</button>
+    </div>
+</div>

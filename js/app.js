@@ -16,7 +16,7 @@ angular.module("app", ["ui.router", "uiGmapgoogle-maps"])
     .service("greeting", function Greeting() {
         var greeting = this;
     
-        greeting.message = "defualt";
+        greeting.message = "Username";
     })
 
     .controller("FirstCtrl", function FirstCtrl(greeting) {
@@ -25,8 +25,23 @@ angular.module("app", ["ui.router", "uiGmapgoogle-maps"])
         first.greeting = greeting;
     })
 
-    .controller("SecondCtrl", function SecondCtrl(greeting) {
+    .controller("SecondCtrl", function SecondCtrl($scope, greeting) {
         var second = this;
     
         second.greeting = greeting;
+    
+        $scope.map = {
+            center: { 
+                latitude: 40.730, 
+                longitude: -73.994 
+            },
+            zoom: 16
+        }
+        
+        $scope.marker = {
+            coords: {
+                latitude: 40.730, 
+                longitude: -73.994 
+            }
+        }
     })
