@@ -38,10 +38,10 @@ angular.module("app", ["ui.router", "uiGmapgoogle-maps"])
             zoom: 16
         }
         
-        $scope.marker = {
+        /*$scope.marker = {
             coords: {
                 latitude: 40.730, 
                 longitude: -73.994 
             }
-        }
+        }*/
     })
